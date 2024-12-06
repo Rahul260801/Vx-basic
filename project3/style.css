@@ -1,0 +1,243 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url(https://images.unsplash.com/photo-1496065187959-7f07b8353c55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxsaWdodHxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Form container */
+#p1 {
+    background-color: rgba(127, 255, 212, 0.699);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align:center;
+    border-radius: 8px;
+}
+
+/* Form Title */
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(0, 255, 0);
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+
+/* Input field styling */
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Gender radio button styling */
+.fg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Phone input layout */
+#formtel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#phonecode{
+    width: 20%;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b9c41e;
+    font-size: small;
+}
+
+/* Terms and Conditions section */
+.terms-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Checkbox container */
+.checkbox-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    font-size: 16px;
+    
+}
+label[for="male"] {
+    font-weight: bold; 
+    padding-left: 10px;
+}
+
+label[for="female"] {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#p1:hover{
+    background-color: rgba(240, 248, 255, 0.658);
+}
+#male{
+    margin-left: 20px;
+}
+#female{
+    margin-left:20px;
+}
+
+#agreec{
+   color: black;
+}
+#age{
+    width: 10%;
+}
+/* Submit button */
+.submit-btn {
+    margin-top: 20px;
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Output section styling */
+/* #tableoutput {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    max-width: 700px;
+    text-align: left;
+    background-color: rgba(255, 255, 0, 0.801);
+} */
+/* Table container */
+#tableoutput {
+    margin-top: 20px;
+    width: 50%;
+    overflow-x: auto;
+    text-align: left;
+    background-color: yellow;
+    margin-left: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table Data Styling */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Set specific widths for the columns */
+th, td {
+    word-wrap: break-word; /* Allows content to wrap in cells */
+}
+
+/* Set column widths for a better presentation */
+th:nth-child(1), td:nth-child(1) {
+    width: 20%; /* Full Name */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 20%; /* Email */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 20%; /* Phone */
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 15%; /* DOB */
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 15%; /* Location */
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 10%; /* Age */
+}
+
+th:nth-child(7), td:nth-child(7) {
+    width: 10%; /* Gender */
+}
+
+

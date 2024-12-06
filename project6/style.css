@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /* background-image: url(https://images.pexels.com/photos/27054260/pexels-photo-27054260/free-photo-of-sky-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+#nav {
+    width: 100%;
+    height: 50vh;  /* Changed from 40% to 50vh for better responsiveness */
+    /* background-color: rgba(0, 0, 255, 0.363); */
+    background-image: url(https://images.pexels.com/photos/1330218/pexels-photo-1330218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column; /* Changed from row to column for stacking content vertically */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;  /* Added padding for better spacing */
+}
+
+#bar {
+    width: 50%;  /* Increased width for better visibility */
+    max-width: 400px;  /* Limiting max width for large screens */
+    height: 50px;  /* Set a fixed height for the bar */
+    background-color: lightgray;
+    border: px solid black;
+    display: flex;
+    align-items: center;  /* Centers contents vertically */
+    padding: 5px 10px;  /* Padding inside the bar */
+    justify-content: space-between;
+}
+
+
+h1 {
+    color: yellow;  /* Ensure the heading is readable on dark backgrounds */
+    font-size: 2.5rem;  /* Increased font size for emphasis */
+    margin-bottom: 20px;  /* Margin adjusted to separate from bar */
+  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Simple shadow */
+}
+#bar input{
+    width: 100%;  /* This makes the input take up the full width of the bar */
+    height: 100%;  /* Ensures the input's height matches the bar */
+    padding: 10px;  /* Adjust padding for better spacing */
+    
+}
+#btn{
+    margin-left: 20px;
+}
+.task:hover{
+  opacity: .8;
+}
+.task {
+    background-image: url(https://images.pexels.com/photos/1330218/pexels-photo-1330218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    color: black;
+    margin: 10px 0;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bolder;
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-between; /* Space out the buttons and the text */
+    align-items: center; /* Vertically center everything inside */
+ 
+}
+
+.tasktext{
+    flex: 1;
+    font-size: 1rem;
+    text-align: center;
+}
+button{
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ccc;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="p1">
+        <h2>Registration Form</h2>
+        <form action="submit" method="post">
+            <!-- Form Fields: Full Name, Email, Password, Phone, DOB, Location, Age, Gender -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group" id="formtel">
+                <label for="phonecode" id="phn">Phone</label>
+                <select id="phonecode" name="phonecode">
+                    <option value="+91">+91 India</option>
+                    <option value="+1">+1 USA</option>
+                </select>
+                <input type="text" id="phnnum" name="phnnum" placeholder="Enter phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob" id="do">DOB</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location" id="loc">Location</label>
+                <select id="location" name="location" required>
+                    <option value="">Select your location</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="India">India</option>
+                    <option value="dubai">Dubai</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age" id="ag">Age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </div>
+
+            <div class="form-group fg">
+                <label for="gender"><h4>Gender</h4></label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="terms-container">
+                <h1>Terms and Conditions</h1>
+                <p>By using this website, you agree to the following terms and conditions. Please read the full text before accepting.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel risus ac turpis efficitur lacinia.</p>
+                <p>Nullam ac enim non elit pharetra gravida non et eros.</p>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agreeCheckbox" name="agree" required>
+                    <label for="agreeCheckbox" id="agreec">I agree to the Terms and Conditions</label>
+                </div>
+
+                <button class="submit-btn" id="submitBtn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Registration Data Table -->
+    <div id="tableoutput">
+        <table id="registrationTable" border="3">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>DOB</th>
+                    <th>Location</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
